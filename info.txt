@@ -1,0 +1,9 @@
+# Adding Images
+-> add an image in the text cell using the HTML <img> tag with src of the image.
+-> for e.g. 
+	<img src="assets/bricks.jpg">
+
+# Section heading
+-> add section headings using tags like <h1> or <h2>
+-> use the # symbol as shortcut as <h1> equals # <h2> equals ## and so on
+
