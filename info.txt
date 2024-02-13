@@ -33,5 +33,23 @@
 -> using the .twinx() method allows ax1 and ax2 to share the same x-axis
 -> set color in lines and axis to differentiate them
 
+# Working with a relational database
+-> database schema: a schema is just how the database is organised.
+-> relational database is split into individual tables and these tables are linked to each other through 
+   their keys
+-> example: the themes.csv file has the actual theme names and the set.csv has the themes_ids which match the
+   "id" column of the themes.csv
+	# Search for the name 'Star Wars'
+	themes[themes.name == 'Star Wars']
+	# check which product corresponds to the themes in the sets.csv
+	sets[sets.theme_id == 18]
+
+# .merge() method:
+-> used to combine two separate DataFrames into one.
+-> works on columns with the same name in both DataFrames 
+-> to merge two dataframes along a particular column, we need to provide our two dataframes and then the column
+   name on which to merge
+-> example: merged_df = pd.merge(set_theme_count, themes, on='id')
+
 
    
